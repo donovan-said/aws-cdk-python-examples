@@ -1,0 +1,24 @@
+Adds feature/Fixes issue: feature/bugfix/hotfix/#######
+
+#### Description
+
+Insert description here.
+
+#### Screenshots (UI, email, Admin UI etc. Optional)
+
+Insert supporting screenshots here.
+
+#### Checklist
+- [ ] I have resolved all the comments, either here or in real life
+- [ ] I have added automated tests that cover the new behaviour and removed obsolete tests and code
+- [ ] All the external dependencies (e.g., message bus, APIs) mentioned in this PR have been confirmed to be resolved and working in production
+- [ ] This PR contains API changes and I have communicated it with all clients and QA to made sure nothing will break
+- [ ] This PR needs additional scripts to be run before or after deploy (data migration, backfill, etc.) [Link to scripts](...)
+
+#### Tested on
+- [ ] Dev
+- [ ] Test
+- [ ] Production
+
+#### Follow up work (Optional)
+Link to related issues, other PRs

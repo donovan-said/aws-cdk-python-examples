@@ -1,0 +1,9 @@
+{
+  "name": "cdk-examples",
+  "version": "0.1.5",
+  "description": "Node dependencies for the cdk-examples repository.",
+  "dependencies": {
+    "aws-cdk": "2.96.2"
+  },
+  "private": true
+}

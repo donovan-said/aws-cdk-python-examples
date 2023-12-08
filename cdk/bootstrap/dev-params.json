@@ -1,0 +1,14 @@
+[
+  {
+    "ParameterKey": "TrustedAccounts",
+    "ParameterValue": "######"
+  },
+  {
+    "ParameterKey": "CloudFormationExecutionPolicies",
+    "ParameterValue": "arn:aws:iam::######:policy/TBC"
+  },
+  {
+    "ParameterKey": "FileAssetsBucketName",
+    "ParameterValue": "TBC"
+  }
+]
