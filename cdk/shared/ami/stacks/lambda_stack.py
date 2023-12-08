@@ -58,7 +58,7 @@ class AmiLambdaStack(Stack):
             managed_policy_name=(
                 f"{props['account_alias'].lower()}-ami-refresh-lambda-policy"
             ),
-            description="Adhoc access for the AutoConf service.",
+            description="Adhoc access for the service.",
             statements=[
                 iam.PolicyStatement(
                     sid="Ec2Describe",

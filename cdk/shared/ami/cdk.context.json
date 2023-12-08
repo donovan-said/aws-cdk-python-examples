@@ -18,7 +18,7 @@
     }
   },
   "tags": {
-    "caution": "do not modify manually",
+    "caution": "Created with IaC - Do not modify on the console!",
     "code": "https://github.com/donovan-said/aws-cdk-examples",
     "created_by": "cdk"
   },
