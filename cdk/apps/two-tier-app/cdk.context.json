@@ -1,0 +1,106 @@
+{
+  "stack": {
+    "net_stack": {
+      "name": "{INSERT_APP_NAME}-Network-Stack",
+      "description": "This stack contains all the networking infrastructure for the {INSERT_APP_NAME} application."
+    },
+    "hz_stack": {
+      "name": "{INSERT_APP_NAME}-HostedZone-Stack",
+      "description": "This stack contains all the hosted zone infrastructure for the {INSERT_APP_NAME} application."
+    },
+    "rds_stack": {
+      "name": "{INSERT_APP_NAME}-RDS-Stack",
+      "description": "This stack contains all the rds infrastructure for the {INSERT_APP_NAME} application."
+    },
+    "storage_stack": {
+      "name": "{INSERT_APP_NAME}-RDS-Stack",
+      "description": "This stack contains all the storage infrastructure for the {INSERT_APP_NAME} application."
+    },
+    "app_stack": {
+      "name": "{INSERT_APP_NAME}-Application-Stack",
+      "description": "This stack contains all the application infrastructure for the {INSERT_APP_NAME} application."
+    },
+    "mon_stack": {
+      "name": "{INSERT_APP_NAME}-Monitoring-Stack",
+      "description": "This stack contains all the monitoring infrastructure for the {INSERT_APP_NAME} application."
+    },
+    "cd_stack": {
+      "name": "{INSERT_APP_NAME}-CodeDeploy-Stack",
+      "description": "This stack contains all the code deploy infrastructure for the {INSERT_APP_NAME} application."
+    }
+  },
+  "account": {
+    "dev": {
+      "account_alias": "{INSERT_AWS_ACCOUNT_ALIAS}",
+      "account_id": "{INSERT_AWS_ACCOUNT_ID}",
+      "region": "eu-west-2"
+    },
+    "uat": {
+      "account_alias": "{INSERT_AWS_ACCOUNT_ALIAS}",
+      "account_id": "{INSERT_AWS_ACCOUNT_ID}",
+      "region": "eu-west-2"
+    },
+    "prod": {
+      "account_alias": "{INSERT_AWS_ACCOUNT_ALIAS}",
+      "account_id": "{INSERT_AWS_ACCOUNT_ID}",
+      "region": "eu-west-2"
+    }
+  },
+  "tags": {
+    "caution": "Created with IaC - Do not modify on the console!",
+    "code": "https://github.com/donovan-said/aws-cdk-examples",
+    "created_by": "cdk"
+  },
+  "s3": {
+    "asset_bucket_name": "{INSERT_APP_NAME}-cdk-assets",
+    "config_bucket_name": "{INSERT_APP_NAME}-config-bucket",
+    "logging_bucket_name": "{INSERT_APP_NAME}-logging-bucket"
+  },
+  "vpc": {
+    "dev": {
+      "vpc_id": "{INSERT_VPC_ID}"
+    },
+    "uat": {
+      "vpc_id": "{INSERT_VPC_ID}"
+    },
+    "prod": {
+      "vpc_id": "{INSERT_VPC_ID}"
+    }
+  },
+  "dns": {
+    "dev": {
+      "domain_name": "{INSERT_DOMAIN_NAME}.com"
+    },
+    "uat": {
+      "domain_name": "{INSERT_DOMAIN_NAME}.com"
+    },
+    "prod": {
+      "domain_name": "{INSERT_DOMAIN_NAME}.com"
+    }
+  },
+  "asg": {
+    "dev": {
+      "max_capacity": 1,
+      "min_capacity": 1
+    },
+    "uat": {
+      "max_capacity": 1,
+      "min_capacity": 1
+    }
+  },
+  "app_config": {
+    "bin_temp_path": "/usr/local/bin/tmp",
+    "bin_path": "/usr/local/bin/"
+  },
+  "slack_config": {
+    "dev": {
+      "email": "{INSERT_SLACK_EMAIL}"
+    },
+    "uat": {
+      "email": "{INSERT_SLACK_EMAIL}"
+    },
+    "prod": {
+      "email": "{INSERT_SLACK_EMAIL}"
+    }
+  }
+}
