@@ -1,14 +1,14 @@
 [
   {
     "ParameterKey": "TrustedAccounts",
-    "ParameterValue": "######"
+    "ParameterValue": "{INSERT_AWS_ACCOUNT_ID}"
   },
   {
     "ParameterKey": "CloudFormationExecutionPolicies",
-    "ParameterValue": "arn:aws:iam::######:policy/TBC"
+    "ParameterValue": "arn:aws:iam::{INSERT_AWS_ACCOUNT_ID}:policy/TBC"
   },
   {
     "ParameterKey": "FileAssetsBucketName",
-    "ParameterValue": "TBC"
+    "ParameterValue": "{INSERT_ASSET_BUCKET_NAME}"
   }
 ]

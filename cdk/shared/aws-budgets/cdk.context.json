@@ -1,19 +1,24 @@
 {
   "stack": {
     "budget_stack": {
-      "name": "Budget-Stack",
+      "name": "{APP_NAME}-Budget-Stack",
       "description": "This stack contains all the infrastructure for the Budget solution."
     }
   },
   "account": {
     "dev": {
-      "account_alias": "####",
-      "account_id": "####",
+      "account_alias": "{INSERT_AWS_ACCOUNT_ALIAS}",
+      "account_id": "{INSERT_AWS_ACCOUNT_ID}",
       "region": "eu-west-2"
     },
     "uat": {
-      "account_alias": "####",
-      "account_id": "####",
+      "account_alias": "{INSERT_AWS_ACCOUNT_ALIAS}",
+      "account_id": "{INSERT_AWS_ACCOUNT_ID}",
+      "region": "eu-west-2"
+    },
+    "prod": {
+      "account_alias": "{INSERT_AWS_ACCOUNT_ALIAS}",
+      "account_id": "{INSERT_AWS_ACCOUNT_ID}",
       "region": "eu-west-2"
     }
   },
@@ -23,7 +28,7 @@
     "created_by": "cdk"
   },
   "s3": {
-    "asset_bucket_name": "TBC"
+    "asset_bucket_name": "{INSERT_APP_NAME}-cdk-assets"
   },
   "budget_threshold": {
     "dev": {
@@ -35,10 +40,13 @@
   },
   "slack_config": {
     "dev": {
-      "email": "TBC"
+      "email": "{INSERT_SLACK_EMAIL}"
     },
     "uat": {
-      "email": "TBC"
+      "email": "{INSERT_SLACK_EMAIL}"
+    },
+    "prod": {
+      "email": "{INSERT_SLACK_EMAIL}"
     }
   }
 }

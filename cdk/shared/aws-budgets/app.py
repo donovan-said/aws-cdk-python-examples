@@ -10,7 +10,7 @@ from stacks.budget_stack import BudgetStack
 app = cdk.App()
 
 # Get environment variables
-ADO_PIPELINE_RUN_ID = os.getenv("ADO_PIPELINE_RUN_ID")
+PIPELINE_RUN_ID = os.getenv("PIPELINE_RUN_ID")
 BRANCH_NAME = os.getenv("BRANCH_NAME")
 COMMIT_ID = os.getenv("COMMIT_ID")
 ENVIRONMENT = os.getenv("CDK_ENVIRONMENT")
@@ -53,7 +53,7 @@ budget_stack = BudgetStack(
     description=props["budget_stack_description"],
     stack_name=f"{props['account_alias'].lower()}-{props['budget_stack_name']}",
     synthesizer=cdk.DefaultStackSynthesizer(
-        qualifier="TBC",
+        qualifier="{INSERT_QUALIFIER_NAME}",
         file_assets_bucket_name=(
             f"{props['account_alias'].lower()}-{props['asset_bucket_name']}"
         ),
@@ -64,7 +64,7 @@ budget_stack = BudgetStack(
 # appending dynamic values to the cdk stack.
 tags = app.node.try_get_context("tags")
 
-tags["ado_pipeline_run_id"] = ADO_PIPELINE_RUN_ID
+tags["ado_pipeline_run_id"] = PIPELINE_RUN_ID
 tags["branch_name"] = BRANCH_NAME
 tags["commit_id"] = COMMIT_ID
 tags["environment"] = ENVIRONMENT
