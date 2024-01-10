@@ -1,0 +1,8 @@
+{
+  "detail-type": ["ACM Certificate Expired"],
+  "resources": [
+    "arn:aws:acm:eu-west-2:123456789012:certificate/123456789012",
+    "arn:aws:acm:eu-west-2:123456789012:certificate/123456789012"
+  ],
+  "source": ["aws.acm"]
+}

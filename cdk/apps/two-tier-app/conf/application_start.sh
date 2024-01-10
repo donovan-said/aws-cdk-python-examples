@@ -1,1 +1,3 @@
 #!/bin/bash
+
+## INSERT SCRIPT TO START APPLICATION
