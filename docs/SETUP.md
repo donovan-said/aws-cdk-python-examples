@@ -34,6 +34,10 @@ pip install pipenv
 pipenv install -d
 ```
 
+```shell
+pipenv shell
+```
+
 ### npm
 
 npm is used to manage all node dependencies.
