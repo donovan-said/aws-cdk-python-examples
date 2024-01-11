@@ -1,0 +1,20 @@
+{
+  "version": "0",
+  "id": "id",
+  "detail-type": "ACM Certificate Expired",
+  "source": "aws.acm",
+  "account": "123456789012",
+  "time": "2019-12-22T18:43:48Z",
+  "region": "region",
+  "resources": [
+    "arn:aws:acm:eu-west-2:123456789012:certificate/123456789012",
+    "arn:aws:acm:eu-west-2:123456789012:certificate/123456789012"
+  ],
+  "detail": {
+    "CertificateType" : "AMAZON_ISSUED",
+    "CommonName": "example.com",
+    "DomainValidationMethod" : "DNS",
+    "CertificateCreatedDate" : "2018-12-22T18:43:48Z",
+    "CertificateExpirationDate" : "2019-12-22T18:43:48Z"
+  }
+}

@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[requires]
+python_version = "3.9"
+
+[packages]
+aws-cdk-lib = "==2.96.2"
+constructs = ">=10.0.0,<11.0.0"
+botocore = "1.32.2"
+pipfile = "*"
+
+[dev-packages]
+pylint = "==2.17.1"
+pytest = "==6.2.5"
+behave = "==1.2.6"
+websocket-client = "==1.6.4"
+urllib3 = "==1.26.18"
+requests = "==2.31.0"
+boto3 = "==1.29.2"
+moto = "==4.2.6"
+pre-commit = "==3.5.0"

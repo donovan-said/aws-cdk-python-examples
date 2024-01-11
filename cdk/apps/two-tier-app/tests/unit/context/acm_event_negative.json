@@ -1,0 +1,17 @@
+{
+  "version": "0",
+  "id": "111111111111",
+  "detail-type": "ACM Certificate Approaching Expiration",
+  "source": "aws.acm",
+  "account": "123456789012",
+  "time": "2020-09-30T06:51:08Z",
+  "region": "us-east-1",
+  "resources": [
+    "arn:aws:acm:eu-west-2:111111111111:certificate/111111111111",
+    "arn:aws:acm:eu-west-2:111111111111:certificate/111111111111"
+  ],
+  "detail": {
+    "DaysToExpiry": 31,
+    "CommonName": "example.com"
+  }
+}

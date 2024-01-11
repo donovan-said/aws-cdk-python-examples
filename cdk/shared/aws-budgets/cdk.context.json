@@ -1,0 +1,52 @@
+{
+  "stack": {
+    "budget_stack": {
+      "name": "{APP_NAME}-Budget-Stack",
+      "description": "This stack contains all the infrastructure for the Budget solution."
+    }
+  },
+  "account": {
+    "dev": {
+      "account_alias": "{INSERT_AWS_ACCOUNT_ALIAS}",
+      "account_id": "{INSERT_AWS_ACCOUNT_ID}",
+      "region": "eu-west-2"
+    },
+    "uat": {
+      "account_alias": "{INSERT_AWS_ACCOUNT_ALIAS}",
+      "account_id": "{INSERT_AWS_ACCOUNT_ID}",
+      "region": "eu-west-2"
+    },
+    "prod": {
+      "account_alias": "{INSERT_AWS_ACCOUNT_ALIAS}",
+      "account_id": "{INSERT_AWS_ACCOUNT_ID}",
+      "region": "eu-west-2"
+    }
+  },
+  "tags": {
+    "caution": "Created with IaC - Do not modify on the console!",
+    "code": "https://github.com/donovan-said/aws-cdk-examples",
+    "created_by": "cdk"
+  },
+  "s3": {
+    "asset_bucket_name": "{INSERT_APP_NAME}-cdk-assets"
+  },
+  "budget_threshold": {
+    "dev": {
+      "threshold": 600
+    },
+    "uat": {
+      "threshold": 1000
+    }
+  },
+  "slack_config": {
+    "dev": {
+      "email": "{INSERT_SLACK_EMAIL}"
+    },
+    "uat": {
+      "email": "{INSERT_SLACK_EMAIL}"
+    },
+    "prod": {
+      "email": "{INSERT_SLACK_EMAIL}"
+    }
+  }
+}

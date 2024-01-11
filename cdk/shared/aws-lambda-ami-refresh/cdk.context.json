@@ -1,0 +1,33 @@
+{
+  "stack": {
+    "lambda_stack": {
+      "name": "Lambda-Stack",
+      "description": "This stack contains all the infrastructure and source code for the Lambda AMI solution."
+    }
+  },
+  "account": {
+    "dev": {
+      "account_alias": "{INSERT_AWS_ACCOUNT_ALIAS}",
+      "account_id": "{INSERT_AWS_ACCOUNT_ID}",
+      "region": "eu-west-2"
+    },
+    "uat": {
+      "account_alias": "{INSERT_AWS_ACCOUNT_ALIAS}",
+      "account_id": "{INSERT_AWS_ACCOUNT_ID}",
+      "region": "eu-west-2"
+    },
+    "prod": {
+      "account_alias": "{INSERT_AWS_ACCOUNT_ALIAS}",
+      "account_id": "{INSERT_AWS_ACCOUNT_ID}",
+      "region": "eu-west-2"
+    }
+  },
+  "tags": {
+    "caution": "Created with IaC - Do not modify on the console!",
+    "code": "https://github.com/donovan-said/aws-cdk-examples",
+    "created_by": "cdk"
+  },
+  "s3": {
+    "asset_bucket_name": "{INSERT_APP_NAME}-cdk-assets"
+  }
+}

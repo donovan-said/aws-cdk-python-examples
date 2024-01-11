@@ -1,0 +1,8 @@
+{
+  "detail-type": ["ACM Certificate Approaching Expiration"],
+  "resources": [
+    "arn:aws:acm:eu-west-2:123456789012:certificate/123456789012",
+    "arn:aws:acm:eu-west-2:123456789012:certificate/123456789012"
+  ],
+  "source": ["aws.acm"]
+}
